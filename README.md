@@ -1,1 +1,1 @@
-# minecrat_vr
+# minecraft_vr

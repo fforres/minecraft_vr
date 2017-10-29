@@ -1,5 +1,5 @@
 import React from 'react';
-import 'aframe'
+import 'aframe';
 import ReactDOM from 'react-dom';
 import App from './App';
 

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-window.AFRAME.registerComponent('qwe', {})
-
 class App extends Component {
   render() {
     return (

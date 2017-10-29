@@ -1,5 +1,6 @@
 import React from 'react';
 import 'aframe';
+import './aframeComponents/gridHelper';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 import App from './App';

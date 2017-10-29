@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
+import Environment from 'components/environment';
 
 class App extends Component {
   render() {
     return (
-    <a-scene
+      <a-scene
+        grid
         fog="type: linear; color#aab; far: 30; near: 0;"
       >
-        <a-plane
-          rotation="-90 0 0"
-          width="20"
-          height="20"
-          color="grey"
-        >
-        </a-plane>
-        <a-sky color="#AAB" position="" rotation="" scale="" visible="" material="" geometry=""></a-sky>
+        <Environment />
       </a-scene>
     );
   }

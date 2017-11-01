@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 
-class environment extends Component {
+class Environment extends Component {
   render() {
     return [
-      <a-plane
-        key="plane"
-        rotation="-90 0 0"
-        width="20"
-        height="20"
+      <a-cylinder
+        key="ground"
+        id="ground"
+        position="0 -0.1 0"
+        radius="40"
+        height="0.1"
         color="grey"
+        className="cubeGenerator"
       />,
       <a-sky
         key="sky"
@@ -24,4 +26,4 @@ class environment extends Component {
   }
 }
 
-export default environment;
+export default Environment;

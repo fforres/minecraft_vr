@@ -4,13 +4,16 @@ AFRAME.registerComponent('collider-check', {
   init: function () { // corre al inicio, cuando el componente se crea
   },
   update: function() { // corre cuando el componente se le updatean props.
-    this.el.addEventListener('click', function (data) {
-      console.log('Player hit something!', data);
+    this.el.addEventListener('click', (data) => {
+      const newVoxelEl = document.createElement('a-box');
+      newVoxelEl.setAttribute('position', data.detail.intersection.point);
+      this.el.appendChild(newVoxelEl);
     });
+
   },
   tick: function() { // corre on cada uno de los frames del render loop.
 
-  } ,
+  },
   remove: function() { // se llama cuando el componente se remueve.
     // this.el.removeEventListener('click');
   }

@@ -11,7 +11,11 @@ class Player extends Component {
         <a-entity
           cursor
           position="0 0 -1"
-          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          geometry={`
+            primitive: ring;
+            radiusInner: 0.01;
+            radiusOuter: 0.02;
+          `}
           material="color: black; shader: flat"
         >
         </a-entity>

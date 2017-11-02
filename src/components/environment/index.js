@@ -26,5 +26,4 @@ class Environment extends Component {
     ];
   }
 }
-
 export default Environment;

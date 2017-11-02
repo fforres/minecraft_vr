@@ -10,6 +10,7 @@ class Box extends Component {
         collider-check
         position={`${x} ${y} ${z}`}
         material={`color: ${color}`}
+        snap="offset: 0.5 0.5 0.5; snap: 1 1 1"
       />
     );
   }

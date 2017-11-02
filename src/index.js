@@ -2,6 +2,7 @@ import React from 'react';
 import 'aframe';
 import './aframeComponents/gridHelper';
 import './aframeComponents/cubeCreator';
+import './aframeComponents/snap';
 import { Provider } from 'react-redux';
 import ReactDOM from 'react-dom';
 import App from './App';

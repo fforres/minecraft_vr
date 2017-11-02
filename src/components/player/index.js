@@ -7,17 +7,13 @@ class Player extends Component {
         camera="userHeight: 1.6"
         look-controls
         wasd-controls
-        collider-check
       >
         <a-entity
-          position="0 0 -0.5"
-          raycaster="interval: 100; objects: .cubeGenerator"
-          geometry={`
-            primitive: ring;
-            radiusInner: 0.008;
-            radiusOuter: 0.01;
-          `}
-          material="color: green;">
+          cursor
+          position="0 0 -1"
+          geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+          material="color: black; shader: flat"
+        >
         </a-entity>
       </a-entity>
     );

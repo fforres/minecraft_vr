@@ -44,5 +44,7 @@ module.exports = {
     "globals": {
         "EventSource": true,
         "getComputedStyle": true,
+        "AFRAME": true,
+        "THREE": true,
     }
   };

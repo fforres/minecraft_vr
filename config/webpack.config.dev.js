@@ -154,8 +154,8 @@ module.exports = {
               plugins: [
                 'transform-class-properties',
                 'react-hot-loader/patch',
-                ["module-resolver", {
-                  "root": ["./src"],
+                ['module-resolver', {
+                  'root': ['./src'],
                 }]
               ]
             },

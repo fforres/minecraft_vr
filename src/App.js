@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Environment from 'components/environment';
 import Player from 'components/player';
 import Block from 'components/block';
+import Assets from 'components/assets';
 
 class App extends Component {
   static propTypes = {
@@ -17,6 +18,7 @@ class App extends Component {
         grid
         fog="type: linear; color#aab; far: 30; near: 0;"
       >
+        <Assets />
         <Environment />
         <Player />
         { this._renderBlocks(this.props.blocks) }

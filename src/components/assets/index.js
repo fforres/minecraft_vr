@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import grassTexture from '../../textures/grass.jpg';
 
 class Assets extends Component {
   render() {
     return (
-      <img
-        crossorigin="anonymous"
-        id="grassTexture"
-        src="../../textures/grass.jpg"
-      />
+      <a-assets>
+        <img
+          id="texture"
+          src={grassTexture}
+        />
+      </a-assets>
     );
   }
 }

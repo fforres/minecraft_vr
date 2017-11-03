@@ -9,7 +9,7 @@ class Box extends Component {
       <a-box
         collider-check
         position={`${x} ${y} ${z}`}
-        src="#grassTexture"
+        src="#texture"
         snap="offset: 0.5 0.5 0.5; snap: 1 1 1"
       />
     );
